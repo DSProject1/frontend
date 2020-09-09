@@ -1,11 +1,6 @@
 <template>
-  <v-app >
-    <v-layout
-    column
-    align-center
-    >
-        <nuxt />
-    </v-layout>
+  <v-app class="app">
+    <nuxt />
   </v-app>
 </template>
 
@@ -13,3 +8,9 @@
 export default {
 }
 </script>
+
+<style lang="scss" scoped>
+.app {
+  background-color: rgb(99, 204, 181);
+}
+</style>

@@ -1,12 +1,15 @@
 <template>
     <div>
-        <h1>Here you can create blog post!</h1>
+        <PostForm></PostForm>
     </div>
 </template>
 
 <script>
+    import PostForm from '@/components/PostForm.vue';
     export default {
-        
+        components: {
+            PostForm,
+        },
     }
 </script>
 
