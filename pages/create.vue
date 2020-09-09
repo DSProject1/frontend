@@ -1,6 +1,6 @@
 <template>
     <div>
-        <PostForm></PostForm>
+        <PostForm @createPost="createPost"></PostForm>
     </div>
 </template>
 
@@ -9,6 +9,11 @@
     export default {
         components: {
             PostForm,
+        },
+        methods: {
+            createPost(post) {
+                console.log(post);
+            }
         },
     }
 </script>

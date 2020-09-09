@@ -17,8 +17,7 @@
             required
         ></v-textarea>
 
-        <v-btn class="mr-4" @click="submit">submit</v-btn>
-        <v-btn @click.prevent="clear">clear</v-btn>
+        <v-btn class="mr-4" :disabled="disable" @click="submit">submit</v-btn>
     </div>
 </template>
 
@@ -32,12 +31,23 @@
         },
         methods: {
             submit() {
-                console.log(this.title);
+                this.$emit("createPost", {
+                title: this.title, 
+                body: this.body
+                })
                 this.clear();
             },
             clear() {
                 this.title = '';
                 this.body = '';
+            }
+        },
+        computed: {
+            disable() {
+                if (this.title.length && this.body.length) {
+                    return false;
+                }
+                return true;
             }
         },
     }
