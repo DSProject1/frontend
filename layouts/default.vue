@@ -1,8 +1,11 @@
 <template>
   <v-app >
-    <v-container>
-      <nuxt />
-    </v-container>
+    <v-layout
+    column
+    align-center
+    >
+        <nuxt />
+    </v-layout>
   </v-app>
 </template>
 

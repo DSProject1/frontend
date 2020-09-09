@@ -1,14 +1,14 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-  </v-layout>
+  <nuxt-link to="/create">
+    <HeroButton></HeroButton>
+  </nuxt-link>  
 </template>
 
 <script>
+import HeroButton from '@/components/HeroButton.vue';
 export default {
-  
+  components: {
+    HeroButton,
+  },
 }
 </script>
