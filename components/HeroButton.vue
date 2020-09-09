@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-btn class="ma-10" x-large outlined color="indigo">Create Blog Post!</v-btn>
+        <v-btn class="ma-10" x-large>Create Blog Post!</v-btn>
     </div>
 </template>
 
