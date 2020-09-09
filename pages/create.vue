@@ -11,8 +11,8 @@
             PostForm,
         },
         methods: {
-            createPost(post) {
-                console.log(post);
+            async createPost(post) {
+                await this.$axios.$post('http://localhost:3004/posts', {...post})
             }
         },
     }

@@ -1,9 +1,29 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "body": "typicode" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "body": "typicode"
+    },
+    {
+      "title": "kami",
+      "body": "kam\n",
+      "id": 2
+    },
+    {
+      "title": "kamil",
+      "body": "kmail",
+      "id": 3
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
