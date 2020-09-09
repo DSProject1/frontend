@@ -36,5 +36,6 @@ h1 {
 }
 p {
     padding: 30px;
+    overflow-wrap: break-word;
 }
 </style>

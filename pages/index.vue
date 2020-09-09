@@ -28,7 +28,7 @@
               <v-card-title class="justify-center" style="font-family: 'Poppins';font-style: normal; font-weight: 30; font-size: 140%;">
                 {{post.title}}
               </v-card-title>
-              <v-card-text style="font-family: 'Poppins';font-style: normal;">
+              <v-card-text style="font-family: 'Poppins';font-style: normal; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
                 {{post.body}}
               </v-card-text>
           </v-card>
