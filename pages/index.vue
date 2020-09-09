@@ -10,15 +10,6 @@
     </v-row>
 
     <v-row
-      align="center"
-      justify="center"
-    >
-      <h1 class="intro display-4">
-        Posts
-      </h1>
-    </v-row>
-
-    <v-row
       class="cards-row"
       dence
       justify="center"
