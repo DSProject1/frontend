@@ -35,7 +35,7 @@
                 title: this.title, 
                 body: this.body
                 })
-                this.clear();
+                this.$router.push("/")
             },
             clear() {
                 this.title = '';
