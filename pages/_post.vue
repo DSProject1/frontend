@@ -1,8 +1,10 @@
 <template>
-    <div>
-        <h1 v-if="postData">{{postData.title}}</h1>
-        <p v-if="postData">{{postData.body}}</p>
-    </div>
+    <v-container>
+        <div class="wrapper">
+            <h1 v-if="postData">{{postData.title}}</h1>
+            <p v-if="postData">{{postData.body}}</p>
+        </div>
+    </v-container>
 </template>
 
 <script>
@@ -22,5 +24,17 @@
 </script>
 
 <style lang="scss" scoped>
-
+.wrapper {
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10vh;
+    box-shadow: 1px 1px 10px;
+}
+h1 {
+    text-align: center;
+}
+p {
+    padding: 30px;
+}
 </style>
