@@ -17,8 +17,8 @@
             }
         },
         async mounted () {
-            const {data} = await axios.get(`http://127.0.0.1:3004/posts/${this.$route.params.post}`);
-            this.postData = data;
+            const {data} = await axios.get(`http://127.0.0.1:80/post/${this.$route.params.post}`);
+            this.postData = data.result;
         },
     }
 </script>

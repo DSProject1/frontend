@@ -42,9 +42,9 @@ export default {
   },
   async created() {
     try {
-      const res = await axios.get(`http://localhost:3004/posts`)
+      const res = await axios.get(`http://127.0.0.1:80/post`)
 
-      this.posts = res.data;
+      this.posts = res.data.result;
     } catch(e) {
       console.error(e)
     }

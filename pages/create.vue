@@ -12,7 +12,7 @@
         },
         methods: {
             async createPost(post) {
-                await this.$axios.$post('http://localhost:3004/posts', {...post})
+                await this.$axios.$post('http://127.0.0.1:80/post', {...post})
             }
         },
     }
